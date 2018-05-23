@@ -1,2 +1,2 @@
-# ArcoLinux Bspwm
+# ArcoLinux Calamares configuration
 
