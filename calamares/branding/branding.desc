@@ -13,7 +13,7 @@ strings:
 images:
     productLogo:         "squid.png"
     productIcon:         "logo.png"
-    productWelcome:      "languages.png"
+    productWelcome:      "calamares-arcolinux-intro.png"
 
 slideshow:               "show.qml"
 
