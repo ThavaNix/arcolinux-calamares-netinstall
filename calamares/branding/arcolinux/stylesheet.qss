@@ -31,3 +31,7 @@ The IDs are based on the object names in the C++ code.
 #licenseItem {  }
 #licenseItemFullText {  }
 */
+
+#debugButton {
+	color: white;
+}
