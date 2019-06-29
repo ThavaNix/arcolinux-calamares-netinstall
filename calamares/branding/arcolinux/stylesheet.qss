@@ -35,3 +35,7 @@ The IDs are based on the object names in the C++ code.
 #debugButton {
 	color: white;
 }
+
+#mainText{
+	font : bold 18px;
+}
