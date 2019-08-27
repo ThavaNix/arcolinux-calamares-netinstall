@@ -136,32 +136,27 @@
   packages:
     - ccr
     - base-devel
-- name: "Graphics"
-  description: "Applications to work with graphics"
-  packages:
-    - kdegraphics-gwenview
-    - kdegraphics-kamera
-    - kdegraphics-kcolorchooser
-    - kdegraphics-kgamma
-    - kdegraphics-kolourpaint
-    - kdegraphics-kruler
-    - kdegraphics-ksaneplugin
-    - kdegraphics-ksnapshot
-    - kdegraphics-libkdcraw
-    - kdegraphics-libkexiv2
-    - kdegraphics-libkipi
-    - kdegraphics-libksane
-    - kdegraphics-mobipocket
-    - kdegraphics-okular
-    - kdegraphics-strigi-analyzer
-    - kdegraphics-svgpart
-    - kdegraphics-thumbnailers
-    - imagemagick
-- name: "Xfce"
+
+- name: "Xfce Desktop"
   description: "Xfce groups"
-  hidden: true
+  hidden: false
   selected: false
-  critical: false
   packages:
     -xfce4
     -xfce4-goodies
+
+- name: "Mate Desktop"
+  description: "Mate groups"
+  hidden: false
+  selected: false
+  packages:
+    -mate
+    -mate-extra
+
+- name: "Gnome Desktop"
+  description: "Gnome groups"
+  hidden: false
+  selected: false
+  packages:
+    -gnome
+    -gnome-extra
