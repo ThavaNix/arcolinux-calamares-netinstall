@@ -1,178 +1,167 @@
-subgroups :
-
-      - name: 'window-manager'
-        description: 'Window manager - choose Openbox (and Compton) or kwin'
-        selected: false
-        hidden: false
-        critical: true
-        packages:
-             - openbox
-             - obconf-qt
-             - compton
-             - compton-conf
-             - kwin
-             - systemsettings
-
-      - name: 'lxqt-basic'
-        description: 'Basic LXQt desktop environment'
-        selected: false
-        hidden: false
-        critical: true
-        packages:
-             - lxqt-about
-             - lxqt-admin
-             - lxqt-config
-             - lxqt-globalkeys
-             - lxqt-notificationd
-             - lxqt-openssh-askpass
-             - lxqt-panel
-             - lxqt-policykit
-             - lxqt-powermanagement
-             - lxqt-qtplugin
-             - lxqt-runner
-             - lxqt-session
-             - lxqt-sudo
-             - pcmanfm-qt
-             - gvfs
-             - qterminal
-             - breeze-icons
-             - juffed-qt5
-             - octopi
-             - octopi-notifier-qt5
-             - network-manager-applet
-             - manjaro-lxqt-basic-settings
-
-      - name: 'pcmanfm-qt-extra'
-        description: 'Packages, which extend the functionality of Pcmanfm-qt file manager'
-        selected: false
-        hidden: false
-        critical: true
-        packages:
-             - gvfs-afc
-             - gvfs-gphoto2
-             - gvfs-mtp
-             - gvfs-nfs
-             - gvfs-smb
-             - xarchiver
-             - zip
-             - unzip
-             - p7zip
-      - name: 'gtk-theming'
-        description: 'Theming settings for GTK applications'
-        selected: false
-        hidden: false
-        critical: true
-        packages:
-             - qt5-styleplugins
-             - lxappearance
-
-      - name: 'fonts-extra'
-        description: 'Extra fonts'
-        selected: false
-        hidden: false
-        critical: true
-        packages:
-             - terminus-font
-             - ttf-bitstream-vera
-             - ttf-dejavu
-             - unrar
-
-             - ttf-droid
-             - ttf-inconsolata
-             - ttf-indic-otf
-             - ttf-liberation
-             - noto-fonts
-
-      - name: 'xscreensaver'
-        description: 'Simple screen saver'
-        selected: false
-        hidden: false
-        critical: true
-        packages:
-             - xscreensaver
-             - xdg-utils
-
-  subgroups:
-
-      - name: "manjaro-hello"
-        description: "Manjaro welcome screen for new Manjaro users"
-        selected: false
-        hidden: false
-        critical: true
-        packages:
-            - manjaro-hello
-
-      - name: "manjaro-documentation"
-        description: "Manjaro user guide"
-        selected: false
-        hidden: false
-        critical: true
-        packages:
-            - manjaro-documentation
-            - xdg-utils
-
-      - name: 'manjaro-printer'
-        description: 'Printing and printer configuration'
-        selected: false
-        hidden: false
-        critical: true
-        packages:
-             - manjaro-printer
-             - bluez-cups
-
-      - name: 'qupzilla'
-        description: 'Simple web browser'
-        selected: false
-        hidden: false
-        critical: true
-        packages:
-             - qupzilla
-
-      - name: 'lximage-qt'
-        description: 'Simple image viewer and screenshot tool'
-        selected: false
-        hidden: false
-        critical: true
-        packages:
-             - lximage-qt
-
-      - name: 'cantata'
-        description: 'Music player'
-        selected: false
-        hidden: false
-        critical: true
-        packages:
-             - cantata
-             - perl-uri
-             - mpd
-
-      - name: 'vlc'
-        description: 'Media player'
-        selected: false
-        hidden: false
-        critical: true
-        packages:
-             - vlc
-             - qt4
-
-      - name: "multimedia-extra"
-        description: "Additional multimedia packages"
-        selected: false
-        hidden: false
-        critical: true
-        packages:
-             - ffmpeg
-             - ffmpegthumbnailer
-             - gstreamer
-             - gst-libav
-             - gst-plugins-bad
-             - gst-plugins-base
-             - gst-plugins-good
-             - gst-plugins-ugly
-             - flac
-             - libcdio
-             - libmtp
-             - libdvdcss
-             - libbluray
-
-      
+# Example configuration with groups and packages, taken from Chakra Linux.
+#
+# This example is rather limited. See `README.md` for full documentation
+# on the configuration format.
+- name: "Default"
+  description: "Default group"
+  hidden: true
+  selected: true
+  critical: false
+  packages:
+    - base
+    - chakra-live-skel
+    - cdemu-client
+    - lsb-release
+    - avahi
+    - grub
+    # disk utils
+    - dosfstools
+    - e2fsprogs
+    - fuse
+    - gptfdisk
+    - jfsutils
+    - ntfs-3g
+    - reiserfsprogs
+    - xfsprogs
+    # power
+    - acpi_call
+    - pmtools
+    # network
+    - dnsutils
+    - iputils
+    - netcfg
+    - xinetd
+    # firmwares
+    - alsa-firmware
+    - linux-firmware
+    # sound
+    - alsa-lib
+    - alsa-utils
+    - gstreamer
+    - gst-plugins-good
+    - gst-plugins-bad
+    - libao
+    - libcanberra-gstreamer
+    - libcanberra-pulse
+    - pulseaudio
+    - pulseaudio-alsa
+    # tools
+    - bash-completion
+    - hwinfo
+    - lsof
+    - man-db
+    - mlocate
+    - nano
+    - openssh
+    - sudo
+    - vim
+    - zsh # :D
+    # archivers
+    - p7zip
+    - unarj
+    - unrar
+    - unzip
+    - zip
+    # xorg base
+    - xorg
+    - xorg-apps
+    - xorg-fonts-alias
+    - xorg-fonts-encodings
+    - xorg-fonts-misc
+    - xorg-res-utils
+    - xorg-server
+    - xorg-server-utils
+    - xorg-xauth
+    - xorg-xinit
+    - xorg-xkb-utils
+    # xorg video drivers
+    - xf86-video-apm
+    - xf86-video-ark
+    - xf86-video-ati
+    - xf86-video-chips
+    - xf86-video-cirrus
+    - xf86-video-glint
+    - xf86-video-i128
+    - xf86-video-i740
+    - xf86-video-intel
+    - xf86-video-mach64
+    - xf86-video-mga
+    - xf86-video-neomagic
+    - xf86-video-nouveau
+    - xf86-video-nv
+    - xf86-video-openchrome
+    - xf86-video-r128
+    - xf86-video-rendition
+    - xf86-video-s3
+    - xf86-video-s3virge
+    - xf86-video-savage
+    - xf86-video-siliconmotion
+    - xf86-video-sisusb
+    - xf86-video-tdfx
+    - xf86-video-trident
+    - xf86-video-tseng
+    - xf86-video-v4l
+    - xf86-video-vesa
+    - xf86-video-voodoo
+    - mesa-libgl
+    # xorg input drivers
+    - xf86-input-synaptics
+    - xf86-input-wacom
+    - xf86-input-evdev
+    - xf86-input-keyboard
+    - xf86-input-mouse
+    # fonts
+    - terminus-font
+    - ttf-dejavu
+    - ttf-liberation
+    - wqy-microhei
+    - xorg-fonts-100dpi
+    - xorg-fonts-75dpi
+    - xorg-fonts-cyrillic
+    # additional stuff that needs xorg
+    - hicolor-icon-theme
+   
+- name: "Wireless"
+  description: "Tools for wireless connections"
+  critical: false
+  packages:
+    - crda
+    - ndiswrapper
+    - usb-modeswitch
+    - wireless-regdb
+    - wireless_tools
+    - wpa_supplicant
+- name: "CCR"
+  description: "Tools for the Chakra Community Repository"
+  packages:
+    - ccr
+    - base-devel
+- name: "Graphics"
+  description: "Applications to work with graphics"
+  packages:
+    - kdegraphics-gwenview
+    - kdegraphics-kamera
+    - kdegraphics-kcolorchooser
+    - kdegraphics-kgamma
+    - kdegraphics-kolourpaint
+    - kdegraphics-kruler
+    - kdegraphics-ksaneplugin
+    - kdegraphics-ksnapshot
+    - kdegraphics-libkdcraw
+    - kdegraphics-libkexiv2
+    - kdegraphics-libkipi
+    - kdegraphics-libksane
+    - kdegraphics-mobipocket
+    - kdegraphics-okular
+    - kdegraphics-strigi-analyzer
+    - kdegraphics-svgpart
+    - kdegraphics-thumbnailers
+    - imagemagick
+- name: "Xfce"
+  description: "Xfce groups"
+  hidden: true
+  selected: false
+  critical: false
+  packages:
+    -xfce4
+    -xfce4-goodies
