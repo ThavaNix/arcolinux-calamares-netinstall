@@ -1,20 +1,20 @@
-# Maintainer: Erik Dubois <erik.dubois@gmail.com>
-pkgname=arcolinux-calamares-git
-_pkgname=arcolinux-calamares
+
+pkgname=arcolinux-calamares-netinstall
+_pkgname=arcolinux-calamares-netinstall
 _destname="/etc/calamares"
 _licensedir="/usr/share/arcolinux/licenses/"
 pkgver=19.09
 pkgrel=6
 pkgdesc="calamares for arcolinux"
 arch=('any')
-url="https://github.com/arcolinux/arcolinux-calamares-git"
+url="https://github.com/ThavaNix/arcolinux-calamares-netinstall.git"
 license=('GPL3')
 makedepends=('git')
 conflicts=('arcolinux-calamares-git-git' 'arcolinux-calamares-dev-git')
 depends=()
 provides=("${pkgname}")
 options=(!strip !emptydirs)
-source=(${_pkgname}::"git+https://github.com/arcolinux/${_pkgname}.git")
+source=(${_pkgname}::"git+https://github.com/ThavaNix/${_pkgname}.git")
 sha256sums=('SKIP')
 install='readme.install'
 package() {
