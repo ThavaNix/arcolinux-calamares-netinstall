@@ -137,32 +137,30 @@
     - ccr
     - base-devel
 
-- name: "Xfce Desktop"
+- name: "xfce Desktop"
   description: "Xfce groups"
   hidden: false
   selected: false
   critical: false
   packages:
-    -xfce4
-    -xfce4-goodies
+    - xfce4
+    - xfce4-goodies
 
-- name: "Mate Desktop"
+- name: "mate Desktop"
   description: "Mate groups"
   hidden: false
   selected: false
-  critical: false
   packages:
-    -mate
-    -mate-extra
-    -filemanager-actions
-    -accountsservice
+    - mate
+    - mate-extra
+    - filemanager-actions
+    - accountsservice
 
-- name: "Gnome Desktop"
+- name: "gnome Desktop"
   description: "Gnome groups"
   hidden: false
   selected: false
-  critical: false
   packages:
-    -gnome
-    -gnome-extra
-    -filemanager-actions
+    - gnome
+    - gnome-extra
+    - filemanager-actions
