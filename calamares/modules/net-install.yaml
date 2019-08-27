@@ -139,6 +139,8 @@
 
 - name: "Xfce Desktop"
   description: "Xfce groups"
+  hidden: false
+  selected: false
   critical: false
   packages:
     -xfce4
@@ -146,14 +148,21 @@
 
 - name: "Mate Desktop"
   description: "Mate groups"
+  hidden: false
+  selected: false
   critical: false
   packages:
     -mate
     -mate-extra
+    -filemanager-actions
+    -accountsservice
 
 - name: "Gnome Desktop"
   description: "Gnome groups"
-  critical : false
+  hidden: false
+  selected: false
+  critical: false
   packages:
     -gnome
     -gnome-extra
+    -filemanager-actions
