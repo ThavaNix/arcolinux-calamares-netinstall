@@ -156,3 +156,12 @@
     - gnome
     - gnome-extra
     - filemanager-actions
+
+- name: "Kde Plasma Desktop"
+  description: "Plasma groups"
+  hidden: false
+  selected: false
+  packages:
+    - plasma-meta
+    - kdebase-meta
+    - kde-applications-meta
