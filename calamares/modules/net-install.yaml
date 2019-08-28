@@ -9,8 +9,7 @@
   critical: false
   packages:
     - base
-    - chakra-live-skel
-    - cdemu-client
+    - base-devel
     - lsb-release
     - avahi
     - grub
@@ -62,6 +61,15 @@
     - unrar
     - unzip
     - zip
+    
+
+- name: "Xorg"
+  description: "Xorg Groups"
+  hidden: false
+  selected: false
+  critical: false
+  packages:
+
     # xorg base
     - xorg
     - xorg-apps
@@ -120,22 +128,6 @@
     - xorg-fonts-cyrillic
     # additional stuff that needs xorg
     - hicolor-icon-theme
-   
-- name: "Wireless"
-  description: "Tools for wireless connections"
-  critical: false
-  packages:
-    - crda
-    - ndiswrapper
-    - usb-modeswitch
-    - wireless-regdb
-    - wireless_tools
-    - wpa_supplicant
-- name: "CCR"
-  description: "Tools for the Chakra Community Repository"
-  packages:
-    - ccr
-    - base-devel
 
 - name: "xfce Desktop"
   description: "Xfce groups"

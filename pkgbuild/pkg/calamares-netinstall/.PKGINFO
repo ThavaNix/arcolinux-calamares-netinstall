@@ -2,10 +2,10 @@
 # using fakeroot version 1.23
 pkgname = calamares-netinstall
 pkgbase = calamares-netinstall
-pkgver = alpha2.0-9
+pkgver = alpha2.5-1
 pkgdesc = calamares for arcolinux
 url = https://github.com/ThavaNix/arcolinux-calamares-netinstall.git
-builddate = 1566931211
+builddate = 1566982775
 packager = Unknown Packager
 size = 1642496
 arch = any
