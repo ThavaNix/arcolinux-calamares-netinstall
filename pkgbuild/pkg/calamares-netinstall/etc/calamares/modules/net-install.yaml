@@ -92,7 +92,12 @@
     - xorg-fonts-cyrillic
     # additional stuff that needs xorg
     - hicolor-icon-theme
-
+        # xorg input drivers
+    - xf86-input-synaptics
+    - xf86-input-wacom
+    - xf86-input-evdev
+    - xf86-input-keyboard
+    - xf86-input-mouse
 - name: " Video  Drivers"
   description: "Video Drivers Groups"
   hidden: false
@@ -129,12 +134,6 @@
     - xf86-video-vesa
     - xf86-video-voodoo
     - mesa-libgl
-    # xorg input drivers
-    - xf86-input-synaptics
-    - xf86-input-wacom
-    - xf86-input-evdev
-    - xf86-input-keyboard
-    - xf86-input-mouse
     - open-vm-tools
 
 - name: "xfce Desktop"
