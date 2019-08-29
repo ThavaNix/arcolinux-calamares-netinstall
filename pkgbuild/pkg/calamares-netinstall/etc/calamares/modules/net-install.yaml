@@ -82,6 +82,23 @@
     - xorg-xauth
     - xorg-xinit
     - xorg-xkb-utils
+    # fonts
+    - terminus-font
+    - ttf-dejavu
+    - ttf-liberation
+    - wqy-microhei
+    - xorg-fonts-100dpi
+    - xorg-fonts-75dpi
+    - xorg-fonts-cyrillic
+    # additional stuff that needs xorg
+    - hicolor-icon-theme
+
+- name: " Video  Drivers"
+  description: "Video Drivers Groups"
+  hidden: false
+  selected: false
+  critical: false
+  packages:
     # xorg video drivers
     - xf86-video-apm
     - xf86-video-ark
@@ -118,16 +135,7 @@
     - xf86-input-evdev
     - xf86-input-keyboard
     - xf86-input-mouse
-    # fonts
-    - terminus-font
-    - ttf-dejavu
-    - ttf-liberation
-    - wqy-microhei
-    - xorg-fonts-100dpi
-    - xorg-fonts-75dpi
-    - xorg-fonts-cyrillic
-    # additional stuff that needs xorg
-    - hicolor-icon-theme
+    - open-vm-tools
 
 - name: "xfce Desktop"
   description: "Xfce groups"
@@ -165,3 +173,12 @@
     - plasma-meta
     - kdebase-meta
     - kde-applications-meta
+
+- name: "Display Manager Desktop"
+  description: "Display Manager groups"
+  hidden: false
+  selected: false
+  packages:
+    - lightdm-gtk-greeter-settings
+    - gdm
+    - lxdm
