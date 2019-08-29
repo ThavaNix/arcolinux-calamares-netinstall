@@ -41,6 +41,6 @@ Presentation
 			anchors.centerIn: parent
         }
 
-    }
+    }c
   
 }

@@ -1,11 +1,11 @@
 format = 1
 pkgname = calamares-netinstall
 pkgbase = calamares-netinstall
-pkgver = alpha2.5-9
+pkgver = alpha3.0-1
 pkgarch = any
-pkgbuild_sha256sum = e188d8c1ca944d61ab4c34d51c2106eac2c94f89fb1d0cdc96efdc3072b22b96
+pkgbuild_sha256sum = 27fbb93a53a86226d4dc1cd11a2d177a45d35148185173f4077878202b548472
 packager = Unknown Packager
-builddate = 1567067703
+builddate = 1567068971
 builddir = /home/thava/arcolinux-calamares-netinstall/pkgbuild
 buildenv = !distcc
 buildenv = color
