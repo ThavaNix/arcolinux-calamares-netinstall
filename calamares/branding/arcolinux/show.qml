@@ -42,41 +42,5 @@ Presentation
         }
 
     }
-
-    Slide {
-
-        Image {
-            id: background2
-            source: "calamares-arcolinux-xfce.png"
-            width: 800; height: 350
-            fillMode: Image.PreserveAspectFit
-			anchors.centerIn: parent
-        }
-
-    }
-
-    Slide {
-
-        Image {
-            id: background3
-            source: "calamares-arcolinux-openbox.png"
-            width: 800; height: 350
-            fillMode: Image.PreserveAspectFit
-			anchors.centerIn: parent
-        }
-
-    }
-
-    Slide {
-
-        Image {
-            id: background4
-            source: "calamares-arcolinux-i3.png"
-            width: 800; height: 350
-            fillMode: Image.PreserveAspectFit
-			anchors.centerIn: parent
-        }
-
-    }
-
+  
 }
